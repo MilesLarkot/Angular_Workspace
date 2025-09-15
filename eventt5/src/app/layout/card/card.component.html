@@ -1,12 +1,14 @@
 <div
   class="rounded-lg overflow-hidden border-gray-300 border-1 w-[354px] text-left"
 >
-  <img src="https://placehold.co/354" alt="" />
-  <div class="p-4">
+  <img src="{{ imageUrl }}" alt="" class="" />
+  <div class="p-4 space-y-2">
     <p class="text-[1.25rem]">Achetez vos tickets</p>
     <p class="">Réservez en quelques clics, rapidement et en toute sécurité.</p>
     <button
-      class="p-[4px] px-[8px] bg-blue-500 text-white text-[0.875rem] rounded-sm hover:bg-blue-600 cursor-pointer"
+      class="p-[4px] px-[8px] text-[0.875rem] rounded-sm cursor-pointer {{
+        buttonStyle
+      }}"
     >
       Mes Tickets
     </button>
