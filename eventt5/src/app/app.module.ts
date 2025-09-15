@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { MainComponent } from './layout/main/main.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NotFoundComponent } from './layout/not-found/not-found.component';
+import { CardComponent } from './layout/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+    NotFoundComponent,
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
