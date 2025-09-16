@@ -4,7 +4,9 @@
     {
       "src": "eventt5/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist/eventt5" }
+      "config": {
+        "distDir": "dist/eventt5"
+      }
     }
   ],
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
